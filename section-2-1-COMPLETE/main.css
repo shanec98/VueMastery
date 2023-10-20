@@ -6,7 +6,3 @@ input[type="text"] {
   margin: 10px 0;
   display: block;
 }
-
-[v-cloak] {
-  display: none;
-}
