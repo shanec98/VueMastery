@@ -2,7 +2,7 @@
   <p>Hey!</p>
 
   <Greeting :age="age"></Greeting>
-  <User :age="age" @age-change="updateAge"></User>
+  <User :age="age" @age-change="updateAge" :ageChangeFn="updateAgeCB"></User>
 </template>
 
 <script>
@@ -22,6 +22,9 @@ export default {
   },
   methods: {
     updateAge(num) {
+      this.age += num
+    },
+    updateAgeCB(num) {
       this.age += num
     }
   }
